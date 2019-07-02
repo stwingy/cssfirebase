@@ -2,7 +2,7 @@ import './App.css';
 import { firestore } from './firebase';
 import React, { useEffect, useState, useRef, useReducer } from 'react';
 import { collectIdsAndDocs } from './utilities';
-const App = () => {
+const App = async() => {
 	//const [ posts, setPosts ] = useState([]);
 	const [ currentPost, setCurrentPost ] = useState({});
 	const [ title, setTitle ] = useState('');
@@ -70,7 +70,9 @@ const App = () => {
 	};
 
 	return (
+		
 		<div>
+			{console.log(posts)}
 			<form onSubmit={handleForm}>
 				<input placeholder="Title" onChange={userTitleOnChange} value={title} />
 				<textarea placeholder="Subject" onChange={userSubjectOnChange} value={subject} />

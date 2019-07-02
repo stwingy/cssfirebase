@@ -1,5 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/auth'
 
 const firebaseConfig = {
     apiKey: "AIzaSyAMHjU4THqBDAGpLHoq9DOZLkKSHmhY-70",
@@ -16,5 +17,9 @@ const firebaseConfig = {
 export const firestore = firebase.firestore()
 //const settings ={timestampsInSnapshots:true}
 //firestore.settings(settings)
+export const auth =firebase.auth()
+export const provider = new firebase.auth.GoogleAuthProvider()
+export const signInWithGoogle =()=>auth.signInWithPopup(provider)
+export const signOut =()=> auth.signOut()
 window.firebase =firebase
   export default firebase

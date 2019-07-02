@@ -1,0 +1,48 @@
+.home {
+    
+
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../../assets/house.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,10em);
+  }
+  @media only screen and (max-width: 72.5em) {
+    .home{
+      grid-template-rows: repeat(13,10em);
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    .home{
+      grid-template-rows: repeat(20,10em);
+    }
+  }
+  .topb{
+    background-color: #c69963;
+    height:2rem;
+    grid-column: 1/-1;
+    grid-row:1/2;
+  }
+  .headerholder{
+
+    grid-column:1/-1;
+grid-row: 2/4;
+margin:auto;
+  }
+  .head3{
+    font-size: 1.6rem;
+    color: #c69963;
+    text-transform: uppercase;
+  }
+  .head1{
+    font-size: 4.5rem;
+    color: #f9f7f6;
+    line-height: 1;
+  }
+  @media only screen and (max-width: 37em) {
+    .head1{
+      font-size: 3.5rem;
+    }
+  }

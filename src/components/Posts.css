@@ -1,4 +1,4 @@
-.features {
+.cads {
     width:100%;
     margin-top: 300px;
     margin-left: auto;
@@ -8,21 +8,26 @@
     grid-gap: 6rem;
     align-items: start; 
 justify-content: center;} 
-    .feature {
+    .cad {
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); 
         background-color: var(--color-grey-light-1);
         width: auto;
         margin-bottom: 0; }
-        .feature__text {
+        .cad__text {
             padding:0 1rem;
             font-size: 1.2rem;
             color: var(--color-grey-dark-2);
             font-weight: 300;
             line-height: 1.6; }
-           .feature >.heading-4 {
+           .cad >.heading-4 {
             padding:1rem;
                 font-weight:400;
                 font-size: 1.9rem;
                 background-color: var(--color-grey-dark-2);
                 color: var(--color-grey-light-1);
+            }
+            .cad-span{
+                
+                margin-left:50%;
+              
             }
